@@ -5,7 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "shopify hydrogen dev",
+    "dev": "BROWSER=none shopify hydrogen dev || yarn run fallback",
+    "fallback": "BROWSER=none shopify hydrogen dev || yarn run fallback",
     "build": "shopify hydrogen build",
     "preview": "shopify hydrogen preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
@@ -22,6 +23,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "eslint": "^8.18.0",
     "eslint-plugin-hydrogen": "^0.12.2",
+    "framer-motion": "^6.5.1",
     "playwright": "^1.22.2",
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
@@ -42,7 +44,8 @@
     "react-dom": "^18.2.0",
     "react-use": "^17.4.0",
     "title": "^3.4.4",
-    "typographic-base": "^1.0.4"
+    "typographic-base": "^1.0.4",
+    "yarn": "^1.22.19"
   },
   "author": "matt"
 }
