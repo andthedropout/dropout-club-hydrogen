@@ -4,8 +4,8 @@ export default defineConfig({
   shopify: {
     defaultCountryCode: 'US',
     defaultLanguageCode: 'EN',
-    storeDomain: 'hydrogen-preview.myshopify.com',
-    storefrontToken: '3b580e70970c4528da70c98e097c2fa0',
+    storeDomain: 'https://the-dropout-club.myshopify.com/',
+    storefrontToken: '17699cb8f651a7f18793d54a0b6a25b6',
     storefrontApiVersion: '2022-07',
   },
   session: CookieSessionStorage('__session', {
